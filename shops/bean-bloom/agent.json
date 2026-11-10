@@ -1,0 +1,43 @@
+{
+  "@type": "AgentCard",
+  "name": "Bean Bloom Coffee",
+  "name_zh": "晨光咖啡",
+  "url": "https://agent-friendly-site.github.io/shops/bean-bloom/",
+  "description": "Small-batch roasted coffee beans, shipped from Yunnan.",
+  "category": "coffee",
+  "currency": "CNY",
+  "agent_only": true,
+  "human_browsing": false,
+  "entry_points": {
+    "llms_txt": "https://agent-friendly-site.github.io/shops/bean-bloom/llms.txt",
+    "llms_full_txt": "https://agent-friendly-site.github.io/shops/bean-bloom/llms-full.txt",
+    "openapi": "https://agent-friendly-site.github.io/shops/bean-bloom/openapi.json",
+    "agent_card": "https://agent-friendly-site.github.io/shops/bean-bloom/agent.json",
+    "catalog": "https://agent-friendly-site.github.io/shops/bean-bloom/api/catalog.json",
+    "products": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json",
+    "policies": "https://agent-friendly-site.github.io/shops/bean-bloom/policies.json",
+    "mcp": "https://agent-friendly-site.github.io/shops/bean-bloom/mcp"
+  },
+  "mcp": {
+    "endpoint": "https://agent-friendly-site.github.io/shops/bean-bloom/mcp",
+    "transport": "Streamable HTTP",
+    "protocol_versions": [
+      "2025-06-18",
+      "2025-03-26"
+    ],
+    "tools": [
+      "list_products",
+      "get_product",
+      "create_order",
+      "get_order"
+    ],
+    "status": "documented-demo-only-on-github-pages"
+  },
+  "discovery": [
+    "GET {shop}/",
+    "GET {shop}/llms.txt",
+    "GET {shop}/openapi.json",
+    "GET {shop}/agent.json",
+    "POST {shop}/mcp tools/list"
+  ]
+}

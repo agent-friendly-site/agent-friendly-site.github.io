@@ -1,0 +1,43 @@
+{
+  "@type": "AgentCard",
+  "name": "Terra Pots Ceramics",
+  "name_zh": "陶土手作",
+  "url": "https://agent-friendly-site.github.io/shops/terra-pots/",
+  "description": "Hand-thrown stoneware mugs and plates, made in Jingdezhen.",
+  "category": "ceramics",
+  "currency": "CNY",
+  "agent_only": true,
+  "human_browsing": false,
+  "entry_points": {
+    "llms_txt": "https://agent-friendly-site.github.io/shops/terra-pots/llms.txt",
+    "llms_full_txt": "https://agent-friendly-site.github.io/shops/terra-pots/llms-full.txt",
+    "openapi": "https://agent-friendly-site.github.io/shops/terra-pots/openapi.json",
+    "agent_card": "https://agent-friendly-site.github.io/shops/terra-pots/agent.json",
+    "catalog": "https://agent-friendly-site.github.io/shops/terra-pots/api/catalog.json",
+    "products": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json",
+    "policies": "https://agent-friendly-site.github.io/shops/terra-pots/policies.json",
+    "mcp": "https://agent-friendly-site.github.io/shops/terra-pots/mcp"
+  },
+  "mcp": {
+    "endpoint": "https://agent-friendly-site.github.io/shops/terra-pots/mcp",
+    "transport": "Streamable HTTP",
+    "protocol_versions": [
+      "2025-06-18",
+      "2025-03-26"
+    ],
+    "tools": [
+      "list_products",
+      "get_product",
+      "create_order",
+      "get_order"
+    ],
+    "status": "documented-demo-only-on-github-pages"
+  },
+  "discovery": [
+    "GET {shop}/",
+    "GET {shop}/llms.txt",
+    "GET {shop}/openapi.json",
+    "GET {shop}/agent.json",
+    "POST {shop}/mcp tools/list"
+  ]
+}

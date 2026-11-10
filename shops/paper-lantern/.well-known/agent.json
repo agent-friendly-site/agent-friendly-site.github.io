@@ -1,0 +1,43 @@
+{
+  "@type": "AgentCard",
+  "name": "Paper Lantern Stationery",
+  "name_zh": "纸灯文具",
+  "url": "https://agent-friendly-site.github.io/shops/paper-lantern/",
+  "description": "Notebooks and pens for people who still write by hand.",
+  "category": "stationery",
+  "currency": "CNY",
+  "agent_only": true,
+  "human_browsing": false,
+  "entry_points": {
+    "llms_txt": "https://agent-friendly-site.github.io/shops/paper-lantern/llms.txt",
+    "llms_full_txt": "https://agent-friendly-site.github.io/shops/paper-lantern/llms-full.txt",
+    "openapi": "https://agent-friendly-site.github.io/shops/paper-lantern/openapi.json",
+    "agent_card": "https://agent-friendly-site.github.io/shops/paper-lantern/agent.json",
+    "catalog": "https://agent-friendly-site.github.io/shops/paper-lantern/api/catalog.json",
+    "products": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json",
+    "policies": "https://agent-friendly-site.github.io/shops/paper-lantern/policies.json",
+    "mcp": "https://agent-friendly-site.github.io/shops/paper-lantern/mcp"
+  },
+  "mcp": {
+    "endpoint": "https://agent-friendly-site.github.io/shops/paper-lantern/mcp",
+    "transport": "Streamable HTTP",
+    "protocol_versions": [
+      "2025-06-18",
+      "2025-03-26"
+    ],
+    "tools": [
+      "list_products",
+      "get_product",
+      "create_order",
+      "get_order"
+    ],
+    "status": "documented-demo-only-on-github-pages"
+  },
+  "discovery": [
+    "GET {shop}/",
+    "GET {shop}/llms.txt",
+    "GET {shop}/openapi.json",
+    "GET {shop}/agent.json",
+    "POST {shop}/mcp tools/list"
+  ]
+}
