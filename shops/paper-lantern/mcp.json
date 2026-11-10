@@ -20,6 +20,25 @@
         }
       },
       {
+        "name": "recommend_products",
+        "description": "Recommend 1 first choice + 1 alternative based on use, preference and budget. Read guide.md / recommendations.json first.",
+        "readOnlyHint": true,
+        "input": {
+          "use": "string",
+          "preference": "string",
+          "budget_cny": "number"
+        }
+      },
+      {
+        "name": "calculate_total",
+        "description": "Calculate price x quantity + shipping, and whether free shipping over 200 CNY applies.",
+        "readOnlyHint": true,
+        "input": {
+          "product_id": "string",
+          "quantity": "integer"
+        }
+      },
+      {
         "name": "create_order",
         "description": "Create an order (demo: mock, no payment, no shipment). Requires idempotency_key.",
         "readOnlyHint": false,

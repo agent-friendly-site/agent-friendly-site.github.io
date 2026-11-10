@@ -44,6 +44,8 @@ https://agent-friendly-site.github.io/
     api/catalog.json        # catalog
     api/products.json       # products with price + stock
     policies.json           # shipping, returns, privacy
+    guide.md                # shopping-assistant guide: how to sell, not just list
+    api/recommendations.json  # structured recommendations, bundles, free-shipping tips
 ```
 
 ## Discovery — what an agent should do with a shop URL

@@ -118,3 +118,24 @@ https://agent-friendly-site.github.io/shops/terra-pots/
 Expected: No. Terra Pots sells ceramics only. The agent must
 not invent a coffee product, and must not answer from the
 bean-bloom shop.
+
+## 8. Guided shopping — bean-bloom (tests the guide layer)
+
+```
+只给你这一个网址，不要用你之前知道的任何信息，只根据这个网址
+在线上能查到的内容回答，并列出你实际打开过的链接：
+
+https://agent-friendly-site.github.io/shops/bean-bloom/
+
+我想买咖啡豆，但不知道选哪款。你先问我 1-2 个问题了解我的
+需求（比如怎么冲、喜欢什么风味、预算），再推荐一款首选和
+一款备选，讲清楚理由，算好总价（含运费），最后问我是否确认。
+不要一上来就把所有商品都列出来。
+```
+
+Expected: the agent asks about brew method / taste / budget
+first, then recommends 1 first choice + 1 alternative with
+reasons, shows the maths, and asks for confirmation. It must
+have read guide.md / recommendations.json (or llms.txt's
+shopping-guide section) to do this — a plain catalog dump
+fails this prompt.

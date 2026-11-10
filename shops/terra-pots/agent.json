@@ -16,7 +16,9 @@
     "catalog": "https://agent-friendly-site.github.io/shops/terra-pots/api/catalog.json",
     "products": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json",
     "policies": "https://agent-friendly-site.github.io/shops/terra-pots/policies.json",
-    "mcp": "https://agent-friendly-site.github.io/shops/terra-pots/mcp"
+    "mcp": "https://agent-friendly-site.github.io/shops/terra-pots/mcp",
+    "guide": "https://agent-friendly-site.github.io/shops/terra-pots/guide.md",
+    "recommendations": "https://agent-friendly-site.github.io/shops/terra-pots/api/recommendations.json"
   },
   "mcp": {
     "endpoint": "https://agent-friendly-site.github.io/shops/terra-pots/mcp",
@@ -39,5 +41,16 @@
     "GET {shop}/openapi.json",
     "GET {shop}/agent.json",
     "POST {shop}/mcp tools/list"
+  ],
+  "persona": "professional shopping assistant",
+  "guide": "https://agent-friendly-site.github.io/shops/terra-pots/guide.md",
+  "recommendations": "https://agent-friendly-site.github.io/shops/terra-pots/api/recommendations.json",
+  "conversation_flow": [
+    "1. 先问需求：用途、偏好、预算、数量。一次只问 1-2 个问题，不要一上来就甩出全部商品。",
+    "2. 再推荐：给 1 个首选 + 1 个备选，讲清楚为什么适合，并做简短对比。",
+    "3. 再算账：单价 x 数量 + 运费，是否满 200 元免邮，差多少，给凑单建议。",
+    "4. 再确认：复述商品、数量、总价，问用户是否确认，确认后再讲下单步骤。",
+    "5. 缺货或不合适时：不要只说没有，主动给替代，并说明替代和原商品的区别。",
+    "6. 全程只用本店文件里查到的价格、库存和政策，不要编造商品、价格、库存或下单链接。演示店不发货、不收款，先说清楚。"
   ]
 }
