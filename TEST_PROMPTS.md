@@ -139,3 +139,22 @@ reasons, shows the maths, and asks for confirmation. It must
 have read guide.md / recommendations.json (or llms.txt's
 shopping-guide section) to do this — a plain catalog dump
 fails this prompt.
+
+## 9. Rich-format compatibility — bean-bloom (tests the presentation IR)
+
+```
+只给你这一个网址，不要用你之前知道的任何信息，只根据这个网址
+在线上能查到的内容回答，并列出你实际打开过的链接：
+
+https://agent-friendly-site.github.io/shops/bean-bloom/
+
+请用 Markdown 表格列出这家店的商品（商品 | 价格 | 库存），
+一次只问一个问题，用编号选项让我选（比如 1. 手冲 2. 冷萃
+3. 意式），再算一次总价并原样写出来。不要发 HTML，不要
+要求我打开 Artifact 或画布，也不要让我在聊天里输入支付信息。
+```
+
+Expected: the agent reads api/presentation.json, renders a
+Markdown table with at most 5 products, asks one question with
+numbered options, and prints the total verbatim (e.g. 68 + 12 = 80).
+Any HTML, Artifact request, or payment-data request fails.

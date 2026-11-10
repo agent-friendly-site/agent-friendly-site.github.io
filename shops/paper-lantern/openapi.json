@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Paper Lantern Stationery — Agent API (demo)",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Demo only. Notebooks and pens for people who still write by hand. No real orders are taken. Agent-first storefront at https://agent-friendly-site.github.io/shops/paper-lantern/ Paths in this document are absolute from the host root, e.g. /shops/paper-lantern/llms.txt."
   },
   "servers": [
@@ -104,6 +104,16 @@
         "responses": {
           "200": {
             "description": "Structured recommendations, bundles and free-shipping tips"
+          }
+        }
+      }
+    },
+    "/shops/paper-lantern/api/presentation.json": {
+      "get": {
+        "operationId": "getPresentation",
+        "responses": {
+          "200": {
+            "description": "Canonical presentation IR: products, options, actions, totals, Markdown fallback, per-client adapters"
           }
         }
       }

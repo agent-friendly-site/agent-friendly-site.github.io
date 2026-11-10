@@ -18,7 +18,8 @@
     "policies": "https://agent-friendly-site.github.io/shops/bean-bloom/policies.json",
     "mcp": "https://agent-friendly-site.github.io/shops/bean-bloom/mcp",
     "guide": "https://agent-friendly-site.github.io/shops/bean-bloom/guide.md",
-    "recommendations": "https://agent-friendly-site.github.io/shops/bean-bloom/api/recommendations.json"
+    "recommendations": "https://agent-friendly-site.github.io/shops/bean-bloom/api/recommendations.json",
+    "presentation": "https://agent-friendly-site.github.io/shops/bean-bloom/api/presentation.json"
   },
   "mcp": {
     "endpoint": "https://agent-friendly-site.github.io/shops/bean-bloom/mcp",
@@ -55,17 +56,25 @@
     "7. 呈现方式（Muse 客户端）：每次问需求、给推荐、确认下单时，都把选择做成可点按的选项（tap-to-reply buttons），而不是只用纯文字问句。例如问冲法时给出 [手冲 / 冷萃 / 意式]，推荐时给出 [选首选 / 选备选 / 再看看]，确认时给出 [确认下单 / 改数量 / 换一款]。每个选项点一下就等于用户发了那句话。注意：这是 Muse 客户端的呈现能力，连接器 / MCP 本身不定义界面；其他客户端可能只显示纯文字，所以选项文字本身也必须完整、能独立看懂。"
   ],
   "presentation": {
-    "note": "On Muse, present each choice as clickable tap-to-reply options, not plain-text questions only. The connector / MCP does not define UI; this is a presentation instruction for the Muse client. Other clients may render plain text, so option labels must be self-contained.",
-    "ask_need_options": "2-4 short options, e.g. brew method [手冲 / 冷萃 / 意式]",
-    "recommend_options": [
-      "选首选",
-      "选备选",
-      "再看看"
-    ],
-    "confirm_options": [
-      "确认下单",
-      "改数量",
-      "换一款"
-    ]
+    "canonical_ir": "https://agent-friendly-site.github.io/shops/bean-bloom/api/presentation.json",
+    "adapters": {
+      "muse": {
+        "rendering": "Clickable tap-to-reply options, list / shopping cards, map, agenda, HTML widget. Agent picks from the IR; options are short labels, 2-4 per question.",
+        "actions": "Options send the label as the user's reply; product rows are links."
+      },
+      "claude": {
+        "rendering": "MCP Apps (io.modelcontextprotocol/ui, text/html;profile=mcp-app, sandboxed iframe, platform-owned template, Allow/Always-allow prompt). Text fallback is mandatory — tools MUST return meaningful text content even when UI is available.",
+        "elicitation": "Form mode for one blocking choice/confirm (flat JSON Schema, enums); URL mode for payment/sign-in only. Claude Code supports form+URL; claude.ai web elicitation support is unverified — do not depend on it there.",
+        "artifacts": "Model-decided only. No tool or MCP server can request an Artifact."
+      },
+      "grok": {
+        "rendering": "Markdown/text only. No documented rich-UI convention for third parties. No MCP Apps rendering, no elicitation, no Artifact/Studio request. Use the Markdown fallback below."
+      },
+      "generic": {
+        "rendering": "Markdown/text only (same as Grok). Default when client capabilities are unknown."
+      }
+    },
+    "fallback": "markdown",
+    "client_detection": "From MCP initialize capabilities: extensions['io.modelcontextprotocol/ui'] + mimeTypes containing 'text/html;profile=mcp-app' => MCP Apps capable; capabilities.elicitation form/url => elicitation capable; otherwise Markdown fallback. Never sniff User-Agent or model name."
   }
 }

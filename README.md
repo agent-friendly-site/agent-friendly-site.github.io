@@ -30,6 +30,8 @@ https://agent-friendly-site.github.io/
   robots.txt
   sitemap.xml
   shops.json                # machine-readable shop list
+  RENDER_ADAPTER.md         # how the platform presents shops to Muse / Claude / Grok
+  presentation-schema.json  # JSON Schema for the canonical presentation IR
   .well-known/agent.json    # platform agent card
   index.html                # minimal platform index (humans may read it; shops are agent-only)
 
@@ -46,6 +48,7 @@ https://agent-friendly-site.github.io/
     policies.json           # shipping, returns, privacy
     guide.md                # shopping-assistant guide: how to sell, not just list
     api/recommendations.json  # structured recommendations, bundles, free-shipping tips
+    api/presentation.json  # canonical presentation IR: products, options, actions, totals, Markdown fallback
 ```
 
 ## Discovery — what an agent should do with a shop URL

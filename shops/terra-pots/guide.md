@@ -40,3 +40,22 @@ Always show the maths: price x quantity + shipping = total.
 - Do not recommend an out-of-stock product as available.
 - Do not invent products, prices, stock, shipping or order links.
 - Do not mix in products from another shop.
+
+## Presentation (rich-format compatibility)
+
+Render from api/presentation.json (canonical IR). - Text is the contract, UI is progressive enhancement. Every tool returns Markdown text + structuredContent (this IR).
+- One question per turn in text. Never present two option groups at once.
+- Numbered options, not buttons: '1. 手冲 — 喜欢花果香、清爽' and 'Reply with the number'.
+- Links, not embedded actions: product and checkout are plain Markdown links.
+- Totals verbatim, once: print the authoritative total; do not recompute or reformat it.
+- Confirm before money moves. Payment happens on the shop checkout page, never card details in chat.
+- Degrade the catalogue, not the truth: text shows at most 5 products; never truncate a price, stock status, or total.
+
+Adapters: Muse = clickable options / cards; Claude = MCP Apps widget (platform-owned template) + elicitation for one blocking choice; Grok / generic = Markdown only.
+
+- Do not ship HTML/CSS/JS from a shop. MCP Apps HTML is the platform's sandboxed template, fed by structuredContent — never merchant markup.
+- Do not assume buttons, cards, or quick-replies exist. They exist only inside an MCP App iframe (Claude/ChatGPT) or as Muse options; everywhere else they are numbered text options.
+- Do not request a Claude Artifact or a Grok Studio canvas. No API exists; the model decides. Do not use the leaked <xaiArtifact> tag.
+- Do not use elicitation for sensitive data, payment credentials, or a catalogue/cart (flat schema only). Payment goes via URL-mode elicitation (Claude) or a plain checkout link (Grok).
+- Do not emit Adaptive Cards, Slack Block Kit, or Telegram keyboards to Claude or Grok — neither consumes them.
+- Do not put a fact only in the widget, only in an image, or only in a link destination. Price, stock, total, and policy are in the IR text too.

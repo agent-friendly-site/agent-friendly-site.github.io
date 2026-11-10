@@ -56,6 +56,28 @@
           "order_id": "string"
         }
       }
-    ]
+    ],
+    "presentation": {
+      "mcp_apps": {
+        "extension": "io.modelcontextprotocol/ui",
+        "mime_type": "text/html;profile=mcp-app",
+        "resource": "ui://terra-pots/product-list",
+        "status": "documented-demo-only",
+        "note": "Platform-owned widget template, fed by tool structuredContent (the IR). The shop never ships HTML/CSS. Tools MUST return meaningful text content even when UI is available. Renders on Claude web/desktop and ChatGPT; Claude Code shows text only; Grok does not render MCP Apps."
+      },
+      "elicitation": {
+        "use_for": "One blocking choice or confirm (flat JSON Schema, enums), Claude Code only. URL mode for payment/sign-in only.",
+        "never_for": [
+          "sensitive data",
+          "payment credentials",
+          "catalogue or cart"
+        ],
+        "note": "claude.ai web elicitation support is unverified; do not depend on it there."
+      },
+      "grok": {
+        "rendering": "Markdown/text only. No rich-UI convention for third parties."
+      },
+      "fallback": "Markdown text from api/presentation.json markdown_fallback. Numbered options, plain links, one question per turn, total verbatim."
+    }
   }
 }

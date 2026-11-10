@@ -74,5 +74,6 @@
       "改数量",
       "换一款"
     ]
-  }
+  },
+  "canonical_ir": "https://agent-friendly-site.github.io/shops/paper-lantern/api/presentation.json"
 }
