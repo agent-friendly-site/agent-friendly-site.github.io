@@ -1,38 +1,41 @@
 {
-  "shop": "terra-pots",
-  "name": "Terra Pots Ceramics",
-  "url": "https://agent-friendly-site.github.io/shops/terra-pots/",
-  "currency": "CNY",
-  "products": [
-    {
-      "id": "tp-mug-300",
-      "name": "Stoneware Mug 300ml",
-      "name_zh": "陶土马克杯 300ml",
-      "price": 128,
-      "currency": "CNY",
-      "stock": 15,
-      "description": "Hand-thrown, glazed interior, dishwasher safe.",
-      "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-mug-300"
-    },
-    {
-      "id": "tp-plate-20",
-      "name": "Dinner Plate 20cm",
-      "name_zh": "陶土餐盘 20cm",
-      "price": 98,
-      "currency": "CNY",
-      "stock": 22,
-      "description": "Speckled glaze, each piece slightly different.",
-      "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-plate-20"
-    },
-    {
-      "id": "tp-vase-s",
-      "name": "Small Bud Vase",
-      "name_zh": "小花瓶",
-      "price": 158,
-      "currency": "CNY",
-      "stock": 8,
-      "description": "Hand-thrown, holds a single stem.",
-      "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-vase-s"
-    }
-  ]
+ "shop": "terra-pots",
+ "name": "Terra Pots Ceramics",
+ "url": "https://agent-friendly-site.github.io/shops/terra-pots/",
+ "currency": "CNY",
+ "products": [
+ {
+ "id": "tp-mug-300",
+ "name": "Stoneware Mug 300ml",
+ "name_zh": "陶土马克杯 300ml",
+ "price": 128,
+ "currency": "CNY",
+ "stock": 15,
+ "description": "Hand-thrown, glazed interior, dishwasher safe.",
+ "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-mug-300",
+ "image_url": null
+ },
+ {
+ "id": "tp-plate-20",
+ "name": "Dinner Plate 20cm",
+ "name_zh": "陶土餐盘 20cm",
+ "price": 98,
+ "currency": "CNY",
+ "stock": 22,
+ "description": "Speckled glaze, each piece slightly different.",
+ "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-plate-20",
+ "image_url": null
+ },
+ {
+ "id": "tp-vase-s",
+ "name": "Small Bud Vase",
+ "name_zh": "小花瓶",
+ "price": 158,
+ "currency": "CNY",
+ "stock": 8,
+ "description": "Hand-thrown, holds a single stem.",
+ "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-vase-s",
+ "image_url": null
+ }
+ ]
 }

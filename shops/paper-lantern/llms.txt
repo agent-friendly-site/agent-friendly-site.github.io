@@ -14,7 +14,7 @@ Act as a professional shopping assistant, not a catalog lookup. First read guide
 # Paper Lantern Stationery (纸灯文具)
 
 > Notebooks and pens for people who still write by hand.
-> Agent-only shop. Demo only — no real orders, no real payments.
+> Agent-only shop. Agent-only shop. Orders are placed through an agent; payment is offline.
 > Shop URL: https://agent-friendly-site.github.io/shops/paper-lantern/
 
 ## Entry points
@@ -25,7 +25,9 @@ Act as a professional shopping assistant, not a catalog lookup. First read guide
 - [Catalog](https://agent-friendly-site.github.io/shops/paper-lantern/api/catalog.json)
 - [Products](https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json)
 - [Policies](https://agent-friendly-site.github.io/shops/paper-lantern/policies.json)
+- [Payment (offline)](https://agent-friendly-site.github.io/shops/paper-lantern/api/payment.json)
 - [MCP descriptor](https://agent-friendly-site.github.io/shops/paper-lantern/mcp.json)
+- [Consumer starter prompt](https://agent-friendly-site.github.io/shops/paper-lantern/starter-prompt.txt)
 
 ## What this shop sells
 - A5 Dot Grid Notebook — 38 CNY, stock 120. 192 pages, 100gsm, lay-flat binding.
@@ -36,4 +38,4 @@ Act as a professional shopping assistant, not a catalog lookup. First read guide
 - Read-only first: GET {shop}/api/products.json, then GET {shop}/policies.json.
 - In production: POST {shop}/mcp, Streamable HTTP, protocol 2025-06-18. Tools: list_products, get_product, create_order, get_order. See mcp.json.
 - On GitHub Pages the MCP endpoint is documented only — Pages is static-only. See platform README.md.
-- create_order is a mock in this demo. Send an idempotency_key. Never charge a real card from demo data.
+- create_order: send an idempotency_key. The order starts as pending_payment; the seller provides offline payment instructions in the order confirmation.

@@ -1,38 +1,41 @@
 {
-  "shop": "bean-bloom",
-  "name": "Bean Bloom Coffee",
-  "url": "https://agent-friendly-site.github.io/shops/bean-bloom/",
-  "currency": "CNY",
-  "products": [
-    {
-      "id": "bb-yirg-250",
-      "name": "Yirgacheffe Light Roast 250g",
-      "name_zh": "耶加雪菲浅烘 250g",
-      "price": 68,
-      "currency": "CNY",
-      "stock": 42,
-      "description": "Floral, citrus, light roast. Whole bean.",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-yirg-250"
-    },
-    {
-      "id": "bb-cold-500",
-      "name": "Cold Brew Blend 500g",
-      "name_zh": "冷萃拼配 500g",
-      "price": 88,
-      "currency": "CNY",
-      "stock": 27,
-      "description": "Chocolate, nutty, low acidity. For cold brew.",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-cold-500"
-    },
-    {
-      "id": "bb-decaf-250",
-      "name": "Decaf Medium Roast 250g",
-      "name_zh": "低因中烘 250g",
-      "price": 72,
-      "currency": "CNY",
-      "stock": 0,
-      "description": "Swiss Water decaf. Out of stock in this demo.",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-decaf-250"
-    }
-  ]
+ "shop": "bean-bloom",
+ "name": "Bean Bloom Coffee",
+ "url": "https://agent-friendly-site.github.io/shops/bean-bloom/",
+ "currency": "CNY",
+ "products": [
+ {
+ "id": "bb-yirg-250",
+ "name": "Yirgacheffe Light Roast 250g",
+ "name_zh": "耶加雪菲浅烘 250g",
+ "price": 68,
+ "currency": "CNY",
+ "stock": 42,
+ "description": "Floral, citrus, light roast. Whole bean.",
+ "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-yirg-250",
+ "image_url": null
+ },
+ {
+ "id": "bb-cold-500",
+ "name": "Cold Brew Blend 500g",
+ "name_zh": "冷萃拼配 500g",
+ "price": 88,
+ "currency": "CNY",
+ "stock": 27,
+ "description": "Chocolate, nutty, low acidity. For cold brew.",
+ "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-cold-500",
+ "image_url": null
+ },
+ {
+ "id": "bb-decaf-250",
+ "name": "Decaf Medium Roast 250g",
+ "name_zh": "低因中烘 250g",
+ "price": 72,
+ "currency": "CNY",
+ "stock": 0,
+ "description": "Swiss Water decaf. Out of stock.",
+ "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-decaf-250",
+ "image_url": null
+ }
+ ]
 }

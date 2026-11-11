@@ -1,84 +1,84 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Canonical presentation IR",
-  "type": "object",
-  "required": [
-    "version",
-    "intent",
-    "title",
-    "narrative",
-    "products",
-    "options",
-    "actions",
-    "markdown_fallback",
-    "provenance"
-  ],
-  "properties": {
-    "version": {
-      "type": "string"
-    },
-    "intent": {
-      "type": "string",
-      "enum": [
-        "recommend",
-        "search_results",
-        "product_detail",
-        "configure",
-        "cart_summary",
-        "checkout_summary",
-        "policy_answer",
-        "error"
-      ]
-    },
-    "title": {
-      "type": "string"
-    },
-    "narrative": {
-      "type": "string"
-    },
-    "products": {
-      "type": "array",
-      "maxItems": 5,
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "name",
-          "price",
-          "stock",
-          "product_url"
-        ]
-      }
-    },
-    "options": {
-      "type": "array",
-      "maxItems": 1
-    },
-    "actions": {
-      "type": "array",
-      "maxItems": 3
-    },
-    "totals": {
-      "type": "object"
-    },
-    "policies": {
-      "type": "array"
-    },
-    "guide": {
-      "type": "string"
-    },
-    "markdown_fallback": {
-      "type": "string"
-    },
-    "provenance": {
-      "type": "object",
-      "required": [
-        "shop_id",
-        "shop_name"
-      ]
-    },
-    "presentation": {
-      "type": "object"
-    }
-  }
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Canonical presentation IR",
+ "type": "object",
+ "required": [
+ "version",
+ "intent",
+ "title",
+ "narrative",
+ "products",
+ "options",
+ "actions",
+ "markdown_fallback",
+ "provenance"
+ ],
+ "properties": {
+ "version": {
+ "type": "string"
+ },
+ "intent": {
+ "type": "string",
+ "enum": [
+ "recommend",
+ "search_results",
+ "product_detail",
+ "configure",
+ "cart_summary",
+ "checkout_summary",
+ "policy_answer",
+ "error"
+ ]
+ },
+ "title": {
+ "type": "string"
+ },
+ "narrative": {
+ "type": "string"
+ },
+ "products": {
+ "type": "array",
+ "maxItems": 5,
+ "items": {
+ "type": "object",
+ "required": [
+ "id",
+ "name",
+ "price",
+ "stock",
+ "product_url"
+ ]
+ }
+ },
+ "options": {
+ "type": "array",
+ "maxItems": 1
+ },
+ "actions": {
+ "type": "array",
+ "maxItems": 3
+ },
+ "totals": {
+ "type": "object"
+ },
+ "policies": {
+ "type": "array"
+ },
+ "guide": {
+ "type": "string"
+ },
+ "markdown_fallback": {
+ "type": "string"
+ },
+ "provenance": {
+ "type": "object",
+ "required": [
+ "shop_id",
+ "shop_name"
+ ]
+ },
+ "presentation": {
+ "type": "object"
+ }
+ }
 }

@@ -1,4 +1,4 @@
-# agent-friendly-site — full corpus (demo, short)
+# agent-friendly-site — full corpus (, short)
 
 ## Bean Bloom Coffee (晨光咖啡)
 Small-batch roasted coffee beans, shipped from Yunnan.

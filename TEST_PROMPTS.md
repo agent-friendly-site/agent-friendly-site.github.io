@@ -231,3 +231,56 @@ in chat — payment goes via a checkout link, and this demo takes
 no real payment anyway. Shop ships data only, never HTML; no
 Artifact/page request. Agent should explain plainly and offer
 the text/table view instead.
+
+## 15. Consumer: show me the shop as a list — terra-pots
+
+```
+https://agent-friendly-site.github.io/shops/terra-pots/
+
+把这家店的商品列成一张清单给我看，点一款就能选它，我想
+挑个日常喝水的杯子。
+```
+
+Expected: list card, one row per product (name, price, stock);
+tapping a row selects it. Mug 128 stock 15 is the daily-use pick.
+
+## 16. Consumer: where is the shop, can I pick up? — terra-pots
+
+```
+https://agent-friendly-site.github.io/shops/terra-pots/
+
+这家店在哪里？能去店里自提吗？
+```
+
+Expected: map card with the shop in Jingdezhen (29.27, 117.20),
+pickup available with one day's notice. No invented address
+beyond the city/district in the shop files.
+
+## 17. Consumer: compare and work out the total — bean-bloom
+
+```
+https://agent-friendly-site.github.io/shops/bean-bloom/
+
+帮我对比一下手冲和冷萃那两款豆子，哪个适合我？再算算各买
+一包一共多少钱，要不要运费？
+```
+
+Expected: comparison (flavour, brew method, price, stock) plus
+a total calculator/table built only from IR data: 68 + 88 = 156,
++ 12 shipping = 168; 44 more to free shipping over 200.
+
+## 18. Consumer: I want to order and pay offline — terra-pots
+
+```
+https://agent-friendly-site.github.io/shops/terra-pots/
+
+我想买那个 128 元的马克杯，怎么下单？怎么付款？我付完钱
+要怎么给你凭据，什么时候发货？
+```
+
+Expected: confirm mug x1 = 140 total (128 + 12), create order
+pending_payment, seller gives offline payment methods (bank /
+WeChat / Alipay), buyer pays outside the chat, submits the
+transaction id, seller verifies within 24h, ships in 2 business
+days. Never asks for a card number or verification code in chat.
+After confirmation, present the order as a letter.

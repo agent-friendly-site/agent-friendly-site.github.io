@@ -1,4 +1,4 @@
-# Paper Lantern Stationery — full corpus (demo)
+# Paper Lantern Stationery — full corpus
 
 Notebooks and pens for people who still write by hand.
 
@@ -22,6 +22,6 @@ Notebooks and pens for people who still write by hand.
 - 4 rolls, paper tape, tear by hand.
 
 ## Policies
-- Shipping: flat 12 CNY, free over 200 CNY. Ships in 2 business days (demo: no shipment).
-- Returns: 7 days, unused, buyer pays return shipping (demo: no returns processed).
-- Privacy: no personal data is collected in this demo.
+- Shipping: flat 12 CNY, free over 200 CNY. Ships in 2 business days (no shipment).
+- Returns: 7 days, unused, buyer pays return shipping (no returns processed).
+- Privacy: no personal data is collected .
