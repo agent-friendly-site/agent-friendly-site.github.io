@@ -2,30 +2,30 @@
  "@type": "AgentCard",
  "name": "Terra Pots Ceramics",
  "name_zh": "陶土手作",
- "url": "https://agent-friendly-site.github.io/shops/terra-pots/",
+ "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/",
  "description": "Hand-thrown stoneware mugs and plates, made in Jingdezhen.",
  "category": "ceramics",
  "currency": "CNY",
  "agent_only": true,
  "human_browsing": false,
  "entry_points": {
- "llms_txt": "https://agent-friendly-site.github.io/shops/terra-pots/llms.txt",
- "llms_full_txt": "https://agent-friendly-site.github.io/shops/terra-pots/llms-full.txt",
- "openapi": "https://agent-friendly-site.github.io/shops/terra-pots/openapi.json",
- "agent_card": "https://agent-friendly-site.github.io/shops/terra-pots/agent.json",
- "catalog": "https://agent-friendly-site.github.io/shops/terra-pots/api/catalog.json",
- "products": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json",
- "policies": "https://agent-friendly-site.github.io/shops/terra-pots/policies.json",
- "mcp": "https://agent-friendly-site.github.io/shops/terra-pots/mcp",
- "guide": "https://agent-friendly-site.github.io/shops/terra-pots/guide.md",
- "recommendations": "https://agent-friendly-site.github.io/shops/terra-pots/api/recommendations.json",
- "presentation": "https://agent-friendly-site.github.io/shops/terra-pots/api/presentation.json",
- "starter_prompt": "https://agent-friendly-site.github.io/shops/terra-pots/starter-prompt.txt",
- "payment": "https://agent-friendly-site.github.io/shops/terra-pots/api/payment.json",
- "location": "https://agent-friendly-site.github.io/shops/terra-pots/api/presentation.json"
+ "llms_txt": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/llms.txt",
+ "llms_full_txt": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/llms-full.txt",
+ "openapi": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/openapi.json",
+ "agent_card": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/agent.json",
+ "catalog": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/catalog.json",
+ "products": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json",
+ "policies": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/policies.json",
+ "mcp": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/mcp",
+ "guide": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/guide.md",
+ "recommendations": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/recommendations.json",
+ "presentation": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/presentation.json",
+ "starter_prompt": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/starter-prompt.txt",
+ "payment": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/payment.json",
+ "location": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/presentation.json"
  },
  "mcp": {
- "endpoint": "https://agent-friendly-site.github.io/shops/terra-pots/mcp",
+ "endpoint": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/mcp",
  "transport": "Streamable HTTP",
  "protocol_versions": [
  "2025-06-18",
@@ -47,8 +47,8 @@
  "POST {shop}/mcp tools/list"
  ],
  "persona": "professional shopping assistant",
- "guide": "https://agent-friendly-site.github.io/shops/terra-pots/guide.md",
- "recommendations": "https://agent-friendly-site.github.io/shops/terra-pots/api/recommendations.json",
+ "guide": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/guide.md",
+ "recommendations": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/recommendations.json",
  "conversation_flow": [
  "1. 先问需求：用途、偏好、预算、数量。一次只问 1-2 个问题，不要一上来就甩出全部商品。",
  "2. 再推荐：给 1 个首选 + 1 个备选，讲清楚为什么适合，并做简短对比。",
@@ -59,7 +59,7 @@
  "7. 呈现方式（Muse 客户端）：每次问需求、给推荐、确认下单时，都把选择做成可点按的选项（tap-to-reply buttons），而不是只用纯文字问句。例如问冲法时给出 [手冲 / 冷萃 / 意式]，推荐时给出 [选首选 / 选备选 / 再看看]，确认时给出 [确认下单 / 改数量 / 换一款]。每个选项点一下就等于用户发了那句话。注意：这是 Muse 客户端的呈现能力，连接器 / MCP 本身不定义界面；其他客户端可能只显示纯文字，所以选项文字本身也必须完整、能独立看懂。"
  ],
  "presentation": {
- "canonical_ir": "https://agent-friendly-site.github.io/shops/terra-pots/api/presentation.json",
+ "canonical_ir": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/presentation.json",
  "adapters": {
  "muse": {
  "rendering": "Clickable tap-to-reply options, list / shopping cards, map, agenda, HTML widget. Agent picks from the IR; options are short labels, 2-4 per question.",

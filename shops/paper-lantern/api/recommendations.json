@@ -1,6 +1,6 @@
 {
  "shop": "paper-lantern",
- "guide": "https://agent-friendly-site.github.io/shops/paper-lantern/guide.md",
+ "guide": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/guide.md",
  "persona": "professional shopping assistant",
  "conversation_flow": [
  "1. 先问需求：用途、偏好、预算、数量。一次只问 1-2 个问题，不要一上来就甩出全部商品。",
@@ -75,6 +75,6 @@
  "换一款"
  ]
  },
- "canonical_ir": "https://agent-friendly-site.github.io/shops/paper-lantern/api/presentation.json",
- "payment": "https://agent-friendly-site.github.io/shops/paper-lantern/api/payment.json"
+ "canonical_ir": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/presentation.json",
+ "payment": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/payment.json"
 }

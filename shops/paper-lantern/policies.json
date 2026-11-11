@@ -11,7 +11,7 @@
  "return_shipping": "buyer pays"
  },
  "privacy": "Order and delivery information only; never shared with third parties. Never send card numbers or verification codes in chat.",
- "payment": "https://agent-friendly-site.github.io/shops/paper-lantern/api/payment.json",
+ "payment": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/payment.json",
  "order_statuses": [
  "pending_payment",
  "payment_submitted",

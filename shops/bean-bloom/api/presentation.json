@@ -16,7 +16,7 @@
         "status": "in_stock",
         "quantity": 42
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-yirg-250",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-yirg-250",
       "attributes": [
         {
           "key": "描述",
@@ -39,7 +39,7 @@
         "status": "in_stock",
         "quantity": 27
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-cold-500",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-cold-500",
       "attributes": [
         {
           "key": "描述",
@@ -62,7 +62,7 @@
         "status": "out_of_stock",
         "quantity": 0
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-decaf-250",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-decaf-250",
       "attributes": [
         {
           "key": "描述",
@@ -125,7 +125,7 @@
       "id": "view_product",
       "label": "查看商品",
       "kind": "link",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-yirg-250",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-yirg-250",
       "confirm": false,
       "destructive": false
     }
@@ -169,8 +169,8 @@
       "text": "线下支付：确认后卖家提供收款方式，买家在 Agent 外付款，提交交易单号，卖家核验后发货。不要在聊天里发银行卡号、验证码。"
     }
   ],
-  "guide": "https://agent-friendly-site.github.io/shops/bean-bloom/guide.md",
-  "markdown_fallback": "## Bean Bloom Coffee（Bean Bloom Coffee）\n\n先问冲法和风味再推荐：手冲选耶加雪菲浅烘，冷萃选冷萃拼配。低因缺货，直接给替代并说明含咖啡因。\n\n| 商品 | 价格 | 库存 |\n|---|---|---|\n| [耶加雪菲浅烘 250g](https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-yirg-250) | 68 元 | 有货（42） |\n| [冷萃拼配 500g](https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-cold-500) | 88 元 | 有货（27） |\n| [低因中烘 250g](https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-decaf-250) | 72 元 | 缺货（0） |\n\n你平时怎么冲咖啡？\n\n1. 手冲 — 喜欢花果香、清爽\n2. 冷萃 — 喜欢醇厚、低酸、冰饮\n3. 意式 — 喜欢浓郁、奶咖\n\n请回复编号选择。\n\n举例：耶加雪菲浅烘 250g 1 件，68 元 + 12 元运费 = 80 元。运费 12 元，满 200 元免邮；退货 7 天，未使用，退货运费买家付。确认后按卖家给的线下支付方式付款，付完把交易单号发给 Agent，卖家核验后发货。\n",
+  "guide": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/guide.md",
+  "markdown_fallback": "## Bean Bloom Coffee（Bean Bloom Coffee）\n\n先问冲法和风味再推荐：手冲选耶加雪菲浅烘，冷萃选冷萃拼配。低因缺货，直接给替代并说明含咖啡因。\n\n| 商品 | 价格 | 库存 |\n|---|---|---|\n| [耶加雪菲浅烘 250g](https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-yirg-250) | 68 元 | 有货（42） |\n| [冷萃拼配 500g](https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-cold-500) | 88 元 | 有货（27） |\n| [低因中烘 250g](https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-decaf-250) | 72 元 | 缺货（0） |\n\n你平时怎么冲咖啡？\n\n1. 手冲 — 喜欢花果香、清爽\n2. 冷萃 — 喜欢醇厚、低酸、冰饮\n3. 意式 — 喜欢浓郁、奶咖\n\n请回复编号选择。\n\n举例：耶加雪菲浅烘 250g 1 件，68 元 + 12 元运费 = 80 元。运费 12 元，满 200 元免邮；退货 7 天，未使用，退货运费买家付。确认后按卖家给的线下支付方式付款，付完把交易单号发给 Agent，卖家核验后发货。\n",
   "provenance": {
     "shop_id": "bean-bloom",
     "shop_name": "Bean Bloom Coffee",
@@ -260,7 +260,7 @@
       "detail": "7 天内可退，退货运费买家付"
     }
   ],
-  "payment": "https://agent-friendly-site.github.io/shops/bean-bloom/api/payment.json",
+  "payment": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/payment.json",
   "muse_formats": {
     "options": {
       "when": "Asking a question or confirming an order",

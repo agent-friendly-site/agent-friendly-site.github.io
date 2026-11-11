@@ -2,7 +2,7 @@
 
 Demo only. No real shops, no real orders, no real payments.
 
-Live site: https://agent-friendly-site.github.io/
+Live site: https://agent-friendly-platform.refined-x.workers.dev/
 
 ## Idea
 
@@ -11,19 +11,19 @@ no human shopping UI. An agent given only a shop URL should be
 able to discover, in order, what the shop sells, how to interact
 with it, and what its policies are.
 
-- Platform: `https://agent-friendly-site.github.io/`
-- Shop: `https://agent-friendly-site.github.io/shops/:shop/` — e.g. `https://agent-friendly-site.github.io/shops/bean-bloom/`
+- Platform: `https://agent-friendly-platform.refined-x.workers.dev/`
+- Shop: `https://agent-friendly-platform.refined-x.workers.dev/shops/:shop/` — e.g. `https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/`
 
 ## Shops (invented)
 
-- [Bean Bloom Coffee (晨光咖啡)](https://agent-friendly-site.github.io/shops/bean-bloom/) — Small-batch roasted coffee beans, shipped from Yunnan.
-- [Paper Lantern Stationery (纸灯文具)](https://agent-friendly-site.github.io/shops/paper-lantern/) — Notebooks and pens for people who still write by hand.
-- [Terra Pots Ceramics (陶土手作)](https://agent-friendly-site.github.io/shops/terra-pots/) — Hand-thrown stoneware mugs and plates, made in Jingdezhen.
+- [Bean Bloom Coffee (晨光咖啡)](https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/) — Small-batch roasted coffee beans, shipped from Yunnan.
+- [Paper Lantern Stationery (纸灯文具)](https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/) — Notebooks and pens for people who still write by hand.
+- [Terra Pots Ceramics (陶土手作)](https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/) — Hand-thrown stoneware mugs and plates, made in Jingdezhen.
 
 ## URL structure
 
 ```
-https://agent-friendly-site.github.io/
+https://agent-friendly-platform.refined-x.workers.dev/
   llms.txt                  # platform index, links to every shop
   llms-full.txt             # platform corpus (short)
   openapi.json              # platform-level API

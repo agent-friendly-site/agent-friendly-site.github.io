@@ -5,13 +5,13 @@
 
 ------------------------------------------------------------
 我想在这家店买点手账用的东西：
-https://agent-friendly-site.github.io/shops/paper-lantern/
+https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/
 先帮我看看卖什么，再问问我平时怎么用，帮我挑一套。
 ------------------------------------------------------------
 
 有预算时，加半句就够了，例如：
 “我想在这家店买点手账用的东西，预算 100 元以内：
-https://agent-friendly-site.github.io/shops/paper-lantern/
+https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/
 你先问问我平时怎么用，再帮我挑一套。”
 
 小提示：

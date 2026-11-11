@@ -16,7 +16,7 @@
         "status": "in_stock",
         "quantity": 15
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-mug-300",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-mug-300",
       "attributes": [
         {
           "key": "描述",
@@ -39,7 +39,7 @@
         "status": "in_stock",
         "quantity": 22
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-plate-20",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-plate-20",
       "attributes": [
         {
           "key": "描述",
@@ -62,7 +62,7 @@
         "status": "low_stock",
         "quantity": 8
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-vase-s",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-vase-s",
       "attributes": [
         {
           "key": "描述",
@@ -125,7 +125,7 @@
       "id": "view_product",
       "label": "查看商品",
       "kind": "link",
-      "url": "https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-mug-300",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-mug-300",
       "confirm": false,
       "destructive": false
     }
@@ -169,8 +169,8 @@
       "text": "线下支付：确认后卖家提供收款方式，买家在 Agent 外付款，提交交易单号，卖家核验后发货。不要在聊天里发银行卡号、验证码。"
     }
   ],
-  "guide": "https://agent-friendly-site.github.io/shops/terra-pots/guide.md",
-  "markdown_fallback": "## Terra Pots Ceramics（Terra Pots Ceramics）\n\n先问用途再推荐：日常用选马克杯，吃饭待客选餐盘配杯成套，装饰送礼选小花瓶。\n\n| 商品 | 价格 | 库存 |\n|---|---|---|\n| [陶土马克杯 300ml](https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-mug-300) | 128 元 | 有货（15） |\n| [陶土餐盘 20cm](https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-plate-20) | 98 元 | 有货（22） |\n| [小花瓶](https://agent-friendly-site.github.io/shops/terra-pots/api/products.json#tp-vase-s) | 158 元 | 有货（8） |\n\n主要用来做什么？\n\n1. 日常喝水、喝茶 — 300ml 马克杯\n2. 吃饭、待客 — 20cm 餐盘，配杯成套\n3. 装饰、送礼 — 小花瓶\n\n请回复编号选择。\n\n举例：陶土马克杯 300ml 1 件，128 元 + 12 元运费 = 140 元。运费 12 元，满 200 元免邮；退货 7 天，未使用，退货运费买家付。确认后按卖家给的线下支付方式付款，付完把交易单号发给 Agent，卖家核验后发货。\n",
+  "guide": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/guide.md",
+  "markdown_fallback": "## Terra Pots Ceramics（Terra Pots Ceramics）\n\n先问用途再推荐：日常用选马克杯，吃饭待客选餐盘配杯成套，装饰送礼选小花瓶。\n\n| 商品 | 价格 | 库存 |\n|---|---|---|\n| [陶土马克杯 300ml](https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-mug-300) | 128 元 | 有货（15） |\n| [陶土餐盘 20cm](https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-plate-20) | 98 元 | 有货（22） |\n| [小花瓶](https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/products.json#tp-vase-s) | 158 元 | 有货（8） |\n\n主要用来做什么？\n\n1. 日常喝水、喝茶 — 300ml 马克杯\n2. 吃饭、待客 — 20cm 餐盘，配杯成套\n3. 装饰、送礼 — 小花瓶\n\n请回复编号选择。\n\n举例：陶土马克杯 300ml 1 件，128 元 + 12 元运费 = 140 元。运费 12 元，满 200 元免邮；退货 7 天，未使用，退货运费买家付。确认后按卖家给的线下支付方式付款，付完把交易单号发给 Agent，卖家核验后发货。\n",
   "provenance": {
     "shop_id": "terra-pots",
     "shop_name": "Terra Pots Ceramics",
@@ -260,7 +260,7 @@
       "detail": "7 天内可退，退货运费买家付"
     }
   ],
-  "payment": "https://agent-friendly-site.github.io/shops/terra-pots/api/payment.json",
+  "payment": "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/api/payment.json",
   "muse_formats": {
     "options": {
       "when": "Asking a question or confirming an order",

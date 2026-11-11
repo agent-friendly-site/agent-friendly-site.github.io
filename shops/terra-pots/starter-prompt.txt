@@ -5,13 +5,13 @@
 
 ------------------------------------------------------------
 我想给家里添点陶器：
-https://agent-friendly-site.github.io/shops/terra-pots/
+https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/
 先帮我看看卖什么，再问问我主要想用来干嘛，帮我推荐一下。
 ------------------------------------------------------------
 
 有预算时，加半句就够了，例如：
 “我想给家里添点陶器，预算 300 元以内：
-https://agent-friendly-site.github.io/shops/terra-pots/
+https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/
 你先问问我主要想用来干嘛，再帮我推荐，算好一共多少钱。”
 
 小提示：

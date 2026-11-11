@@ -1,7 +1,7 @@
 {
   "shop": "paper-lantern",
   "name": "Paper Lantern Stationery",
-  "url": "https://agent-friendly-site.github.io/shops/paper-lantern/",
+  "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/",
   "currency": "CNY",
   "products": [
     {
@@ -12,7 +12,7 @@
       "currency": "CNY",
       "stock": 120,
       "description": "192 pages, 100gsm, lay-flat binding.",
-      "url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-note-a5",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-note-a5",
       "image_url": "https://live.staticflickr.com/3136/2445114424_17c1d9d0b0.jpg",
       "image_credit": "Notebook collection by Dvortygirl, CC BY-SA 2.0, via Openverse (Flickr). Illustrative photo, not the actual product."
     },
@@ -24,7 +24,7 @@
       "currency": "CNY",
       "stock": 300,
       "description": "Smooth gel ink, quick-drying.",
-      "url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-pen-05",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-pen-05",
       "image_url": "https://live.staticflickr.com/1431/884508865_6d250d36c5_b.jpg",
       "image_credit": "Diary writing by freddie boy, CC BY-SA 2.0, via Openverse (Flickr). Illustrative photo, not the actual product."
     },
@@ -36,7 +36,7 @@
       "currency": "CNY",
       "stock": 64,
       "description": "4 rolls, paper tape, tear by hand.",
-      "url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-washi-01",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-washi-01",
       "image_url": "https://live.staticflickr.com/4006/4372346011_348bf09bd3_b.jpg",
       "image_credit": "Washi tape food picks by gamene, CC BY 2.0, via Openverse (Flickr). Illustrative photo, not the actual product."
     }

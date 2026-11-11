@@ -1,13 +1,13 @@
 # Discovery test — multi-merchant, one subdirectory per shop
 
-Base: `https://agent-friendly-site.github.io/`
+Base: `https://agent-friendly-platform.refined-x.workers.dev/`
 
 ## 1. Platform index
 
 ```bash
-curl -s https://agent-friendly-site.github.io/llms.txt
-curl -s https://agent-friendly-site.github.io/shops.json
-curl -s https://agent-friendly-site.github.io/openapi.json | head -c 600
+curl -s https://agent-friendly-platform.refined-x.workers.dev/llms.txt
+curl -s https://agent-friendly-platform.refined-x.workers.dev/shops.json
+curl -s https://agent-friendly-platform.refined-x.workers.dev/openapi.json | head -c 600
 ```
 
 Expected: `llms.txt` lists all three shops with links to each
@@ -16,10 +16,10 @@ shop's `llms.txt`. `shops.json` lists the same shops machine-readably.
 ## 2. One shop, from its URL alone
 
 Pick any shop, e.g. bean-bloom. An agent given only
-`https://agent-friendly-site.github.io/shops/bean-bloom/` should do, in order:
+`https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/` should do, in order:
 
 ```bash
-SHOP=https://agent-friendly-site.github.io/shops/bean-bloom
+SHOP=https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom
 curl -s $SHOP/llms.txt
 curl -s $SHOP/openapi.json | head -c 600
 curl -s $SHOP/agent.json
@@ -40,8 +40,8 @@ algorithm is shop-independent; only the base URL changes.
 ```bash
 for s in bean-bloom paper-lantern terra-pots; do
   echo "== $s =="
-  curl -s https://agent-friendly-site.github.io/shops/$s/llms.txt | head -5
-  curl -s https://agent-friendly-site.github.io/shops/$s/api/products.json | python3 -c "import json,sys; print([(p['id'], p['price']) for p in json.load(sys.stdin)['products']])"
+  curl -s https://agent-friendly-platform.refined-x.workers.dev/shops/$s/llms.txt | head -5
+  curl -s https://agent-friendly-platform.refined-x.workers.dev/shops/$s/api/products.json | python3 -c "import json,sys; print([(p['id'], p['price']) for p in json.load(sys.stdin)['products']])"
 done
 ```
 
@@ -56,9 +56,9 @@ done
 
 ## 4. Failure cases this structure is designed to catch
 
-- Fetching only the host root (`https://agent-friendly-site.github.io/llms.txt`) must NOT be
+- Fetching only the host root (`https://agent-friendly-platform.refined-x.workers.dev/llms.txt`) must NOT be
   mistaken for one shop. It is a platform index.
-- Fetching `https://agent-friendly-site.github.io/shops/bean-bloom/llms.txt` must NOT return
+- Fetching `https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/llms.txt` must NOT return
   another shop's catalog. Each shop's files are namespaced by
   its subdirectory.
 - `/.well-known/agent.json` at the host root describes the

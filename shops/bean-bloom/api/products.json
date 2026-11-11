@@ -1,7 +1,7 @@
 {
   "shop": "bean-bloom",
   "name": "Bean Bloom Coffee",
-  "url": "https://agent-friendly-site.github.io/shops/bean-bloom/",
+  "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/",
   "currency": "CNY",
   "products": [
     {
@@ -12,7 +12,7 @@
       "currency": "CNY",
       "stock": 42,
       "description": "Floral, citrus, light roast. Whole bean.",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-yirg-250",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-yirg-250",
       "image_url": "https://live.staticflickr.com/3911/14562943389_228c092592_b.jpg",
       "image_credit": "Roasted coffee beans by AndreasPoike, CC BY 2.0, via Openverse (Flickr). Illustrative photo, not the actual product."
     },
@@ -24,7 +24,7 @@
       "currency": "CNY",
       "stock": 27,
       "description": "Chocolate, nutty, low acidity. For cold brew.",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-cold-500",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-cold-500",
       "image_url": "https://live.staticflickr.com/7345/13610569685_fd92f96f23_b.jpg",
       "image_credit": "Cold brew coffee by shalommama, CC BY 2.0, via Openverse (Flickr). Illustrative photo, not the actual product."
     },
@@ -36,7 +36,7 @@
       "currency": "CNY",
       "stock": 0,
       "description": "Swiss Water decaf. Out of stock.",
-      "url": "https://agent-friendly-site.github.io/shops/bean-bloom/api/products.json#bb-decaf-250",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/api/products.json#bb-decaf-250",
       "image_url": "https://live.staticflickr.com/4114/4904143161_3fe2ed651d_b.jpg",
       "image_credit": "Roasted coffee beans by originsroasters, CC BY-SA 2.0, via Openverse (Flickr). Illustrative photo, not the actual product."
     }

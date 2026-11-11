@@ -16,7 +16,7 @@
         "status": "in_stock",
         "quantity": 120
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-note-a5",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-note-a5",
       "attributes": [
         {
           "key": "描述",
@@ -39,7 +39,7 @@
         "status": "in_stock",
         "quantity": 300
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-pen-05",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-pen-05",
       "attributes": [
         {
           "key": "描述",
@@ -62,7 +62,7 @@
         "status": "in_stock",
         "quantity": 64
       },
-      "product_url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-washi-01",
+      "product_url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-washi-01",
       "attributes": [
         {
           "key": "描述",
@@ -125,7 +125,7 @@
       "id": "view_product",
       "label": "查看商品",
       "kind": "link",
-      "url": "https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-note-a5",
+      "url": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-note-a5",
       "confirm": false,
       "destructive": false
     }
@@ -169,8 +169,8 @@
       "text": "线下支付：确认后卖家提供收款方式，买家在 Agent 外付款，提交交易单号，卖家核验后发货。不要在聊天里发银行卡号、验证码。"
     }
   ],
-  "guide": "https://agent-friendly-site.github.io/shops/paper-lantern/guide.md",
-  "markdown_fallback": "## Paper Lantern Stationery（Paper Lantern Stationery）\n\n先问用途再推荐：手账日记选 A5 点阵本，配 0.5mm 速干笔，装饰选和纸胶带套装。\n\n| 商品 | 价格 | 库存 |\n|---|---|---|\n| [A5 点阵笔记本](https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-note-a5) | 38 元 | 有货（120） |\n| [中性笔 0.5mm 黑色 3 支装](https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-pen-05) | 18 元 | 有货（300） |\n| [和纸胶带套装·灯](https://agent-friendly-site.github.io/shops/paper-lantern/api/products.json#pl-washi-01) | 25 元 | 有货（64） |\n\n主要用来做什么？\n\n1. 写日记、手账 — 点阵本 + 细笔\n2. 办公记笔记 — 点阵本 + 速干笔\n3. 装饰、分区 — 和纸胶带\n\n请回复编号选择。\n\n举例：A5 点阵笔记本 1 件，38 元 + 12 元运费 = 50 元。运费 12 元，满 200 元免邮；退货 7 天，未使用，退货运费买家付。确认后按卖家给的线下支付方式付款，付完把交易单号发给 Agent，卖家核验后发货。\n",
+  "guide": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/guide.md",
+  "markdown_fallback": "## Paper Lantern Stationery（Paper Lantern Stationery）\n\n先问用途再推荐：手账日记选 A5 点阵本，配 0.5mm 速干笔，装饰选和纸胶带套装。\n\n| 商品 | 价格 | 库存 |\n|---|---|---|\n| [A5 点阵笔记本](https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-note-a5) | 38 元 | 有货（120） |\n| [中性笔 0.5mm 黑色 3 支装](https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-pen-05) | 18 元 | 有货（300） |\n| [和纸胶带套装·灯](https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/products.json#pl-washi-01) | 25 元 | 有货（64） |\n\n主要用来做什么？\n\n1. 写日记、手账 — 点阵本 + 细笔\n2. 办公记笔记 — 点阵本 + 速干笔\n3. 装饰、分区 — 和纸胶带\n\n请回复编号选择。\n\n举例：A5 点阵笔记本 1 件，38 元 + 12 元运费 = 50 元。运费 12 元，满 200 元免邮；退货 7 天，未使用，退货运费买家付。确认后按卖家给的线下支付方式付款，付完把交易单号发给 Agent，卖家核验后发货。\n",
   "provenance": {
     "shop_id": "paper-lantern",
     "shop_name": "Paper Lantern Stationery",
@@ -260,7 +260,7 @@
       "detail": "7 天内可退，退货运费买家付"
     }
   ],
-  "payment": "https://agent-friendly-site.github.io/shops/paper-lantern/api/payment.json",
+  "payment": "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/api/payment.json",
   "muse_formats": {
     "options": {
       "when": "Asking a question or confirming an order",

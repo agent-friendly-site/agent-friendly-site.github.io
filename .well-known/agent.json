@@ -1,16 +1,16 @@
 {
  "@type": "AgentCard",
  "name": "agent-friendly-site",
- "url": "https://agent-friendly-site.github.io",
+ "url": "https://agent-friendly-platform.refined-x.workers.dev",
  "description": "multi-merchant agent-first platform. One shop per subdirectory.",
  "entry_points": {
- "llms_txt": "https://agent-friendly-site.github.io/llms.txt",
- "shops": "https://agent-friendly-site.github.io/shops.json",
- "openapi": "https://agent-friendly-site.github.io/openapi.json"
+ "llms_txt": "https://agent-friendly-platform.refined-x.workers.dev/llms.txt",
+ "shops": "https://agent-friendly-platform.refined-x.workers.dev/shops.json",
+ "openapi": "https://agent-friendly-platform.refined-x.workers.dev/openapi.json"
  },
  "shops": [
- "https://agent-friendly-site.github.io/shops/bean-bloom/",
- "https://agent-friendly-site.github.io/shops/paper-lantern/",
- "https://agent-friendly-site.github.io/shops/terra-pots/"
+ "https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/",
+ "https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/",
+ "https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/"
  ]
 }

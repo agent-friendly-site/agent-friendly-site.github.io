@@ -1,19 +1,22 @@
 # agent-friendly-site
 
+> Canonical host moved to https://agent-friendly-platform.refined-x.workers.dev — this GitHub Pages copy is retained as an archive. Agents should use the canonical host.
+
+
 > multi-merchant agent-first platform. One host, one shop per subdirectory. Shops are agent-only: no human shopping UI.
 
 ## Platform
-- [Shops JSON](https://agent-friendly-site.github.io/shops.json)
-- [OpenAPI](https://agent-friendly-site.github.io/openapi.json)
-- [Platform agent card](https://agent-friendly-site.github.io/.well-known/agent.json)
-- [Discovery test](https://agent-friendly-site.github.io/DISCOVERY.md)
+- [Shops JSON](https://agent-friendly-platform.refined-x.workers.dev/shops.json)
+- [OpenAPI](https://agent-friendly-platform.refined-x.workers.dev/openapi.json)
+- [Platform agent card](https://agent-friendly-platform.refined-x.workers.dev/.well-known/agent.json)
+- [Discovery test](https://agent-friendly-platform.refined-x.workers.dev/DISCOVERY.md)
 
 ## Shops
-- [Bean Bloom Coffee llms.txt](https://agent-friendly-site.github.io/shops/bean-bloom/llms.txt)
-- [Paper Lantern Stationery llms.txt](https://agent-friendly-site.github.io/shops/paper-lantern/llms.txt)
-- [Terra Pots Ceramics llms.txt](https://agent-friendly-site.github.io/shops/terra-pots/llms.txt)
+- [Bean Bloom Coffee llms.txt](https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/llms.txt)
+- [Paper Lantern Stationery llms.txt](https://agent-friendly-platform.refined-x.workers.dev/shops/paper-lantern/llms.txt)
+- [Terra Pots Ceramics llms.txt](https://agent-friendly-platform.refined-x.workers.dev/shops/terra-pots/llms.txt)
 
 ## Discovery
-- Give an agent a shop URL, e.g. https://agent-friendly-site.github.io/shops/bean-bloom/
+- Give an agent a shop URL, e.g. https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/
 - Agent fetches {shop}/llms.txt first, then {shop}/openapi.json, {shop}/agent.json, {shop}/api/products.json, {shop}/policies.json.
-- In production, {shop}/mcp is POST Streamable HTTP. On GitHub Pages it is documented in {shop}/mcp.json only — Pages is static-only, see README.md.
+- {shop}/mcp is a live POST Streamable HTTP endpoint at https://agent-friendly-platform.refined-x.workers.dev/shops/{shop}/mcp (protocol 2025-06-18, see {shop}/mcp.json). Catalog and orders live in D1 on the same Worker.

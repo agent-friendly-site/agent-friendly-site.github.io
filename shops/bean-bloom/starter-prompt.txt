@@ -5,13 +5,13 @@
 
 ------------------------------------------------------------
 我想在这家店买咖啡豆：
-https://agent-friendly-site.github.io/shops/bean-bloom/
+https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/
 先帮我看看卖什么，再问问我平时怎么喝，帮我推荐一款。
 ------------------------------------------------------------
 
 有预算时，加半句就够了，例如：
 “我想在这家店买咖啡豆，预算 100 元以内：
-https://agent-friendly-site.github.io/shops/bean-bloom/
+https://agent-friendly-platform.refined-x.workers.dev/shops/bean-bloom/
 你先问问我平时怎么喝，再帮我推荐。”
 
 小提示：
